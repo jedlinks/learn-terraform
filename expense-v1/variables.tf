@@ -6,7 +6,7 @@ variable "instance_type" {
   default = "t3.micro"
 }
 
-variable "vpc_security_groups_ids" {
+variable "vpc_security_group_ids" {
   default = "sg-0012107af37e36eec"
 }
 
