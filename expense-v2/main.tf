@@ -14,5 +14,5 @@ resource "aws_route53_record" "records" {
   name    = "${element(var.components, count.index)}-dev"
   type    = "A"
   ttl     = 30
-  records = [aws_instance.instances.*.private_ip, count.index]
+  records = [element(aws_instance.instances.*.private_ip, count.index)]
 }
