@@ -19,14 +19,15 @@ variable "components" {
       frontend = {
         name   = "frontend"
         instance_type = "t3.micro"
-
       }
-      backend      = {
+      backend = {
               name = "backend"
               instance_type = "t3.small"
 
       mysql = {
               name = "mysql"
               instance_type = "t3.small"
+      }
+   }
    }
 }
