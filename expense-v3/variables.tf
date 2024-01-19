@@ -18,11 +18,11 @@ variable "components" {
    default     = {
             backend = {
               name = "backend-dev"
+              instance_type = "t3.micro"
               }
 frontend = {
         name   = "frontend-dev"
-        instance_type = "t3.micro"
-      }
+              }
       mysql = {
               name = "mysql-dev"
               instance_type = "t3.small"
