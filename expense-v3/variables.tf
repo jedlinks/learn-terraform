@@ -22,7 +22,6 @@ variable "components" {
       }
       backend = {
               name = "backend"
-              instance_type = "t3.small"
 
       mysql = {
               name = "mysql"
